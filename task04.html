@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+     <div id="left-window" class="container-left ">
+        
+
+      <div class="container-left-header">
+        <div class="profile-info ">
+          <img  src="person-svgrepo-com.svg" alt="" id="show-profil-info">
+        </div>
+        <div class="operations">
+            <i class="fa-solid fa-user-group fa-xl"></i>
+            <i class="fa-solid fa-circle-notch fa-xl "></i>
+            <i class="fa-regular fa-message fa-xl "></i>
+            <button class="btn"> <i  class="fa-solid fa-ellipsis-vertical fa-xl "></i> </button>
+  
+        </div>
+        
+      </div>
+
+      
+      <div class="search">
+       <div class="search-bar">
+         
+       <div >  <i class="fa-solid fa-magnifying-glass fa-lg search-icon" ></i>       </div> 
+        <div>    <input type="text" placeholder=" Search or start new chat" id="input-left" onfocus="changeIcon()" onblur="changeIcon()">       </div> 
+          </div>
+       
+          <i class="fa-solid fa-filter fa-lg" onclick="filter()"></i>
+      
+     </div>
+      <div class="persons">
+        
+        <div class="person" id="ps-1">
+          <div class="person-img">
+            <img src="person-svgrepo-com.svg" alt="">
+          </div>
+          <div class="person-text" onclick="showChat()">
+            <div><p id="p-1">Kullanıcı 1</p>  <p>son mesaj</p></div>
+            <div><p>zaman</p> </div>
+          </div>
+
+        </div>
+
+        <div class="person" id="ps-2">
+          <div class="person-img">
+            <img src="person-svgrepo-com.svg" alt="">
+          </div>
+          <div class="person-text">
+            <div><p id="p-2">Kullanıcı 2</p>  <p>son mesaj</p></div>
+            <div><p>zaman</p> </div>
+          </div>
+        </div>
+
+        <div class="person" id="ps-3">
+          <div class="person-img">
+            <img src="person-svgrepo-com.svg" alt="">
+          </div>
+          <div class="person-text">
+            <div><p id="p-3">Kullanıcı 3</p>  <p>son mesaj</p></div>
+            <div><p>zaman</p> </div>
+          </div>
+        </div>
+
+        <div class="person" id="ps-4">
+          <div class="person-img">
+            <img src="person-svgrepo-com.svg" alt="">
+          </div>
+          <div class="person-text">
+            <div><p id="p-4">Kullanıcı 4</p>  <p>son mesaj</p></div>
+            <div><p>zaman</p> </div>
+          </div>
+        </div>
+
+        <div class="person" id="ps-5">
+          <div class="person-img">
+            <img src="person-svgrepo-com.svg" alt="">
+          </div>
+          <div class="person-text">
+            <div><p id="p-5">Kullanıcı 5</p>  <p>son mesaj</p></div>
+            <div><p>zaman</p> </div>
+          </div>
+        </div>
+
+        <div class="person" id="ps-6">
+          <div class="person-img">
+            <img src="person-svgrepo-com.svg" alt="">
+          </div>
+          <div class="person-text">
+            <div><p id="p-6">Kullanıcı 6</p>  <p>son mesaj</p></div>
+            <div><p>zaman</p> </div>
+          </div>
+        </div>
+
+        <div class="person" >
+          <div class="person-img">
+            <img src="person-svgrepo-com.svg" alt="">
+          </div>
+          <div class="person-text">
+            <div><p id="p-7">Kullanıcı 7</p>  <p>son mesaj</p></div>
+            <div><p>zaman</p> </div>
+          </div>
+        </div>
+
+        <div class="person" >
+          <div class="person-img">
+            <img src="person-svgrepo-com.svg" alt="">
+          </div>
+          <div class="person-text">
+            <div><p id="p-8">Kullanıcı 8</p>  <p>son mesaj</p></div>
+            <div><p>zaman</p> </div>
+          </div>
+        </div>
+
+        <div  class="person" >
+          <div class="person-img">
+            <img src="person-svgrepo-com.svg" alt="">
+          </div>
+          <div class="person-text">
+            <div><p id="p-9">Kullanıcı 9</p>  <p>son mesaj</p></div>
+            <div><p>zaman</p> </div>
+          </div>
+        </div>
+
+       </div>
+     </div>
+      <div class="container-left-side hide">
+        
+        <div class="left-side-second">
+          <i class="fa-solid fa-arrow-left" id="back-button"></i>
+          <p class="left-side-second-text" id="profile-text">Profile</p>
+        </div>
+        <div class="large-profile">
+          <img src="person-svgrepo-com.svg" alt="" id="large-profile-pic">
+        </div>
+        <div class="large-profile-about">
+          <div class="about-section-one">
+            <p id="green-header">Your Name</p>
+            <div class="flex space-between">
+              <p>İsmail Yücel Ölmez</p>
+              <i class="fa-solid fa-pencil"></i>
+            </div>
+             <p>This is your username or pin. This name will be visible to your WhatsApp contacts</p>
+          </div>
+          <div class="about-section-two">
+               <p id="green-headerr">About</p>
+               <div class="flex space-between">
+                 <p>İsmail Yücel Ölmez</p>
+                 <i class="fa-solid fa-pencil"></i>
+               </div>
+               
+          </div>
+                 
+        </div>
+      </div>
+     <div class="container-right">
+      
+       <div class="container-left-header hide" id="chat-profile">
+          <div class="profile-info ">
+              <img  src="person-svgrepo-com.svg" alt="">
+            <div class="person-name-field">
+              <p id="person-name">İsim</p>
+              <p id="online-state">Online/Offline</p>
+           </div>
+           
+          </div>
+          <div class="operations">
+
+            <i class="fa-solid fa-magnifying-glass fa-lg" id="person-search" ></i>
+            <button class="btn"> <i  class="fa-solid fa-ellipsis-vertical fa-xl "></i> </button>
+  
+          </div>
+        
+       </div>
+
+       <div class="container-right-content hide">
+          <div class="chat-box">
+              <div class="my-message">
+                <p class="message-text">Mamma... li...Turchi</p>
+                <p class="date">15:20</p>
+              </div>
+              <div class="other-message">
+                <p class="message-text">La Grande Aquila E Morte</p>
+                <p class="date">15:21</p>
+              </div>
+              <div class="other-message">
+                <p class="message-text">Ben ki sultanlar sultanı, hakanlar hakanı hükümdarlara taç giydiren Allah'ın yer yüzündeki gölgesi Akdeniz'in ve Karadeniz'in ve Rumeli'nin ve Anadolu'nun ve Azerbaycan'ın ve Şam'ın ve Halep'in ve Mısır'ın ve Mekke'nin ve Medine'nin ve Kudüs'ün ve bütün Arap diyarının ve Yemen'in ve nice memleketlerin sultanı ve padişahı sultan Bayezid han oğlu sultan Selim han oğlu sultan Süleyman han'ım.sen ki Fransa vilayetinin kralı Fransuva'sın.
+                  hükümdarların sığındığı kapıma elçinizle mektupla gönderip ülkenizi düşman istila edip şu anda hapiste olduğunuzu bildirip kurtuluşunuz konusunda bizden yardım talep ediyorsunuz.
+                  söylediğiniz her şey dünyayı idare eden tahtımızın ayaklarına arz olunmuştur.Her şeyden haberdar oldum.Yenilmek ve hapsolunmak hayret edilecek bir şey değildir.        
+                  gönlünüzü hoş tutup üzülmeyesiniz. Böyle bir durumda atalarımız düşmanları mağlup etmek ve ülkeler fethetmek için seferden geri kalmamışlardır. biz de atalarımızın yolundayız ve daima memleketler ve alınmaz kaleler fetheylemekteyiz.
+                  gece gündüz daima atımız eyerlenmiş ve kılıcımız belimizde kuşatılmıştır.Yüce Allah hayırlara bağışlasın.Allah'ın istediği ne ise o olsun.Bundan başka haberleri gönderdiğiniz adamınızdan öğrenebilirsiniz.Böyle biliniz.</p>
+                <p class="date">15:26</p>
+              </div>
+              <div class="my-message">
+                <p class="message-text">Lorem, ipsum dolor.</p>
+                <p class="date">20:22</p>
+              </div>
+          </div>
+          <div class="chat-input">
+                 <i class="fa-regular fa-face-laugh-beam"></i>
+                 <i class="fa-solid fa-paperclip"></i> 
+                 <input type="text" name="" id="enter-text" placeholder="Type a message">
+                 <i class="fa-sharp fa-solid fa-microphone"></i>
+          </div>
+          
+       </div>
+        
+    </div>
+    <div class="search-side hide">
+      <div class="container-left-header " id="chat-profile">
+           <div class="flex"> 
+             <i class="fa-solid fa-x " id="x-icon"></i>
+             <p>Search Messages</p>  
+            </div>   
+      
+      </div>
+      
+      <div class="search">
+        <div class="search-bar">
+          
+        <div >  <i class="fa-solid fa-magnifying-glass fa-lg search-icon" id="search-icon"></i>       </div> 
+         <div>    <input style="width: 450px;" type="text" placeholder=" Search or start new chat" id="input-left" onfocus="changeIcon()" onblur="changeIcon()">       </div> 
+           </div>
+              
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="whatsapp.js"></script>
+</body>
+</html>
